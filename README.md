@@ -31,10 +31,17 @@ using [MongoDB](http://www.mongodb.org/) as a data store.
 | ------------- | -------------- | 
 | Express       | Bootstrap      | 
 | Jade          | jQuery         |
-| Mongoose      |                |
+| nodemailer    |                |
 | Passport      | 	         |
 | Async         | 		 |
 |nodemailer	|
+
+
+##note:
+when commit to github, my windows version git shows:
+"node_modules\nodemailer-mailgun-transport" folder have some files name too long,
+so I've remoed the directory from "node_modules".
+you can get it from https://github.com/orliesaurus/nodemailer-mailgun-transport.git
 
 
 ## License
