@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  form(method='POST')
+    legend Signup
+    .form-group
+      label(for='username') Username
+      if (usernm)
+         input.form-control(type='text', name='username', value='#{usernm}' autofocus)
+      else
+        input.form-control(type='text', name='username', autofocus)
+    .form-group
+      label(for='email') Email
+      if (emails)
+        input.form-control(type='text', name='email' value='#{emails}')
+      else
+        input.form-control(type='text', name='email')      
+    .form-group
+      label(for='password') Password
+      input.form-control(type='password', name='password')
+    .form-group
+      label(for='confirm') Confirm Password
+      input.form-control(type='password', name='confirm')
+    button.btn.btn-primary(type='submit') Signup 

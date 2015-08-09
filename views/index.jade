@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  if user
+    p Welcome #{user.username}
+    p email #{user.email}
+    if user.stat == "V"
+     a.btn.btn-link(href='/resend') Resend confirmation email
+  else
+    p Welcome to My App #{title}  
+

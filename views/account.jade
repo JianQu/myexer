@@ -1,0 +1,7 @@
+extends layout
+
+block content
+	p user: #{user.username}
+	p email: #{user.email}
+	if user.stat == "V"
+		a.btn.btn-link(href='/resend') Resend confirmation email
